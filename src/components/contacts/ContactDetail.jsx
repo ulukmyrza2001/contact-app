@@ -31,7 +31,7 @@ const ContactDetail = ({ isVisible, onClose }) => {
                   <Name>{firstName}</Name>
                </Wrapper>
                <Wrapper>
-                  <Label>First name</Label>
+                  <Label>Last name</Label>
                   <Name>{lastName}</Name>
                </Wrapper>
                <Wrapper>
