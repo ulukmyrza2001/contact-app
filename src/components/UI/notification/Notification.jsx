@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
-import media from '../../../utils/helpers/media'
 import Title from '../typography/Title'
 import Text from '../typography/Text'
 
@@ -25,11 +24,11 @@ const Notification = () => {
 
 const StyledToastContainer = styled(ToastContainer)`
    width: 612px;
-   ${media.mobile`
-   max-width: 612px;
+   @media (max-width: 525px) {
+      max-width: 612px;
       width: 100%;
-  padding:1rem;
-   `}
+      padding: 1rem;
+   }
 
    .Toastify__toast--success {
       background: #f0fff1;

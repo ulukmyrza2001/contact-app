@@ -11,6 +11,7 @@ const StyledFlex = styled.div`
    gap: ${(props) => props.gap || '0px'};
    margin: ${({ margin }) => margin || '0'};
    height: ${({ height }) => height || ''};
+   text-transform: ${({ capitalize }) => (capitalize ? 'capitalize' : '')};
 `
 
 const Flex = (props) => {
