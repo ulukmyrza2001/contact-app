@@ -28,7 +28,7 @@ const Contact = ({ contact, address, onClick, id }) => {
 		<ContactStyled onClick={onClick}>
 			<ContactTitle>
 				<IoMdContact color='#8774e1' fontSize={30} /> &nbsp;&nbsp;
-				<Flex direction='column' gap='3px'>
+				<Flex capitalize direction='column' gap='3px'>
 					{contact}
 					<Span>{address}</Span>
 				</Flex>

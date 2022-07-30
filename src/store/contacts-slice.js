@@ -39,6 +39,15 @@ const contactSlice = createSlice({
 		searchContact(state, action) {
 			state.searchValue = action.payload
 		},
+		editContact(state, action) {
+			state.contacts = state.contacts.map((el) => {
+				if (el.id === action.payload.id) {
+					el = action.payload
+				}
+				return el
+			})
+			state.contact = action.payload
+		},
 	},
 	extraReducers: {
 		[getContacts.pending]: (state) => {
